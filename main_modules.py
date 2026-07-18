@@ -61,7 +61,7 @@ def menu():
             search_by_grade(students)
 
         elif choice == "10":
-            print("\nThank you for using the Student Management System!")
+            print("\nThank you for using the System!")
             print("Goodbye!")
             break
 

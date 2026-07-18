@@ -1,37 +1,8 @@
-# student.py
-
-def calculate_grade(scores):
-    """Calculate the student's grade based on average score."""
-    average = sum(scores) / len(scores)
-
-    if average >= 90:
-        return average, "A"
-    elif average >= 80:
-        return average, "B"
-    elif average >= 70:
-        return average, "C"
-    elif average >= 60:
-        return average, "D"
-    else:
-        return average, "F"
-
-
-def calculate_status(grade, active):
-    """Determine student status."""
-    if grade in ["A", "B", "C"] and active:
-        return "PASS ACTIVE"
-    elif grade in ["A", "B", "C"] and not active:
-        return "PASS INACTIVE"
-    else:
-        return "FAIL"
-
-
 def add_student(students):
     """Add a new student."""
 
-    print("\n========== ADD STUDENT ==========")
+    print("\n===== ADD STUDENT =====")
 
-    # Prevent duplicate names (Bonus)
     existing_names = set()
 
     for student in students:
@@ -116,7 +87,7 @@ def add_student(students):
         "active": active
     }
 
-    # append() (Required)
+    # append() 
     students.append(student)
 
     print("\nStudent added successfully!")
@@ -125,10 +96,37 @@ def add_student(students):
     print(f"Status  : {status}")
 
 
+def calculate_grade(scores):
+    """Calculate the student's grade based on average score."""
+    average = sum(scores) / len(scores)
+
+    if average >= 90:
+        return average, "A"
+    elif average >= 80:
+        return average, "B"
+    elif average >= 70:
+        return average, "C"
+    elif average >= 60:
+        return average, "D"
+    else:
+        return average, "F"
+
+
+def calculate_status(grade, active):
+    """Determine student status."""
+    if grade in ["A", "B", "C"] and active:
+        return "PASS ACTIVE"
+    elif grade in ["A", "B", "C"] and not active:
+        return "PASS INACTIVE"
+    else:
+        return "FAIL"
+
+
+
 def view_students(students):
     """Display all students."""
 
-    print("\n========== STUDENT LIST ==========")
+    print("\n===== STUDENT LIST =====")
 
     if len(students) == 0:
         print("No students available.")

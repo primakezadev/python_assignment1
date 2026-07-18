@@ -1,1 +1,1 @@
-Name: keza | Age: 12 | Scores: [30.0, 40.0, 70.0] | Average: 46.67 | Grade: F | Status: FAIL | Active: True
+Name: kevine | Age: 30 | Scores: [60.0, 90.0, 93.0] | Average: 81.00 | Grade: B | Status: PASS ACTIVE | Active: True
