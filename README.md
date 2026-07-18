@@ -127,10 +127,10 @@ The application can:
 ```
 Assignment/
 │
-├── main.py
+├── main_modules.py
 ├── student.py
 ├── statistics.py
-├── file_handler.py
+├── handler.py
 ├── students.txt
 
 ```
